@@ -5,6 +5,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    loose: true,
+    exclude: ['transform-regenerator'],
+    // eslint-disable-next-line node/no-missing-require
+    plugins: [require.resolve('transform-object-rest-spread')],
   });
 
   // Use `app.import` to add additional libraries to the generated

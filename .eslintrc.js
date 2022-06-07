@@ -35,7 +35,7 @@ module.exports = {
         './server/**/*.js',
       ],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: 'babel-eslint',
       },
       env: {
         browser: false,
